@@ -12,7 +12,7 @@
                 <img src="img/img1.jpg" class="d-block w-100" alt="..."  />
             </div>
             <div class="carousel-item">
-                <img src="img/img2.jpg" class="d-block w-100"  />
+                <img src="img/img1.jpg" class="d-block w-100"  />
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselImage" role="button" data-slide="prev">
@@ -25,6 +25,6 @@
         </a>
     </div>
     <div id="copyRight">
-        <center>© Copyright Electrónicos S.A.</center>
+        <center>© Copyright Ricardo Oliva</center>
     </div>
 @endsection

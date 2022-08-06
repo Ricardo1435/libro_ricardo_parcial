@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Tarea Desarrollo Web - RO @yield('title')</title>
+    <title>Parcial I Ricardo Oliva @yield('title')</title>
     <!--CDNs-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -14,7 +14,7 @@
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-    <a class="navbar-brand" href="{{url('/')}}"><i class="fa fa-building" aria-hidden="true"></i> Electrónicos S.A. </a>
+    <a class="navbar-brand" href="{{url('/')}}"><i class="fa fa-building" aria-hidden="true"></i> BIBLIOTECA RICARDO OLIVA</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
