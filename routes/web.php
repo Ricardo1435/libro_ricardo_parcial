@@ -17,3 +17,18 @@ Route::get('/', function () {
     return view('welcome');
 
 })->name('home');
+
+Route::prefix('/libro')->group(
+    function (){
+
+        //Rutas de vistas
+        Route::get('/', [\App\Http\Controllers\LibroController::class, 'index'])->name('libroIndex');
+
+        Route::get('/register', [\App\Http\Controllers\LibroController::class, 'register'])->name('libroRegister');
+
+
+        //Rutas http, peticiones al server
+        Route::post('/create', [\App\Http\Controllers\LibroController::class, 'create'])->name('libroCreate');
+
+    }
+);

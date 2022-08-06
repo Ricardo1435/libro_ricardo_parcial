@@ -3,15 +3,15 @@
     <div class="container md mt-2 col-lg-5">
         <div class="card border-info">
             <div class="card-header bg-info text-white">
-                <center><h2 class="mt-2 mb-2"> AGREGAR CLIENTE &nbsp;<i class="fas fa-pen-alt"></i></h2> </center>
+                <center><h2 class="mt-2 mb-2"> AGREGAR LIBRO &nbsp;<i class="fas fa-pen-alt"></i></h2> </center>
             </div>
             <div class="card-body">
                 <!-- Formulario -->
-                <form action="{{route('customerCreate')}}" method="POST">
+                <form action="{{route('libroCreate')}}" method="POST">
                     @csrf
                     @method('POST')
                     <div>
-                        <b><label for="name" class="mt-2">NOMBRE</label></b>
+                        <b><label for="name" class="mt-2">TITULO</label></b>
                         <input type="text" class="form-control" autocomplete="off" name="name" placeholder="" maxlength="75" required>
                     </div>
                     <div>
