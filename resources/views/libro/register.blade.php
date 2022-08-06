@@ -11,28 +11,36 @@
                     @csrf
                     @method('POST')
                     <div>
+                        <b><label for="isbn" class="mt-2">ISBN</label></b>
+                        <input type="text" class="form-control" autocomplete="off" name="isbn" placeholder="" maxlength="75" required>
+                    </div>
+                    <div>
                         <b><label for="name" class="mt-2">TITULO</label></b>
-                        <input type="text" class="form-control" autocomplete="off" name="name" placeholder="" maxlength="75" required>
+                        <input type="text" class="form-control" autocomplete="off" name="titulo" placeholder="" maxlength="75" required>
                     </div>
                     <div>
-                        <b><label for="address" class="mt-2">DIRECCIÓN</label></b>
-                        <input type="text" class="form-control" autocomplete="off" name="address" placeholder="" maxlength="250" required>
+                        <b><label for="address" class="mt-2">FECHA</label></b>
+                        <input type="date" class="form-control" autocomplete="off" name="fecha" placeholder="" maxlength="250" required>
                     </div>
                     <div>
-                        <b><label for="phone_number" class="mt-2">TELÉFONO</label></b>
-                        <input type="text" class="form-control" autocomplete="off" name="phone_number" placeholder="" maxlength="25" required>
+                        <b><label for="edicion" class="mt-2">EDICION</label></b>
+                        <input type="text" class="form-control" autocomplete="off" name="edicion" placeholder="" maxlength="25" required>
                     </div>
                     <div>
-                        <b><label for="category_id" class="mt-2">CATEGORÍA</label></b>
-                        <select class="custom-select" name="category_id" id="category_id" required>
+                        <b><label for="descripcion" class="mt-2">DESCRIPCION</label></b>
+                        <input type="text" class="form-control" autocomplete="off" name="descripcion" placeholder="" maxlength="25" required>
+                    </div>
+                    <div>
+                        <b><label for="category_id" class="mt-2">EDITORIAL</label></b>
+                        <select class="custom-select" name="editorial_id" id="editorial_id" required>
                             <option>--Seleccione una opcion--</option>
-                            @foreach($categories as $category)
-                                 <option value="{{$category->id}}">{{$category->description}}</option>
+                            @foreach($editoriales as $editorial)
+                                 <option value="{{$editorial->id}}">{{$editorial->nombre}}</option>
                             @endforeach
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-primary my-3" id="btnGuardar" name="accion" value="Guardar">Guardar &nbsp;&nbsp;<i class="fas fa-save"></i></button>
-                    <a href="{{route('customerIndex')}}"> <input type="button" value="Cancelar" class="btn btn-danger" id="btnCancelar"></a>
+                    <button type="submit" class="btn btn-primary my-3" id="btnGuardar" name="accion" value="Guardar">Guardar </button>
+                    <a href="{{route('libroIndex')}}"> <input type="button" value="Cancelar" class="btn btn-danger" id="btnCancelar"></a>
                 </form>
             </div>
         </div>
